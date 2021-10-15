@@ -1,0 +1,10 @@
+components:
+  parameters:
+    Name:
+      in: header
+      name: Name
+      description: _optional_ - 驗證用名稱 (當Name跟Password都有給時，會驗證使用者身分)
+      required: false
+      schema:
+        type: string
+        example: 'hahow'

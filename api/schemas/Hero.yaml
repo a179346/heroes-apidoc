@@ -1,0 +1,23 @@
+components:
+  schemas:
+    Hero:
+      type: object
+      required:
+        - id
+        - name
+        - image
+      properties:
+        id:
+          type: string
+          description: 英雄id
+          example: '1'
+        name:
+          type: string
+          description: 英雄名字
+          example: 'Daredevil'
+        image:
+          type: string
+          description: 英雄圖片
+          example: 'http://i.annihil.us/u/prod/marvel/i/mg/6/90/537ba6d49472b/standard_xlarge.jpg'
+        profile:
+          $ref: '#/components/schemas/HeroProfile'

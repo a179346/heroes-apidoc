@@ -1,0 +1,28 @@
+{
+  "name": "heroes-apidoc",
+  "version": "1.0.0",
+  "description": "Heroes server API 文件",
+  "main": "index.js",
+  "scripts": {
+    "doc": "nodemon --ext js,yaml index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a179346/heroes-apidoc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a179346/heroes-apidoc/issues"
+  },
+  "homepage": "https://github.com/a179346/heroes-apidoc#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.13",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-model-validator": "^3.0.21",
+    "swagger-ui-express": "^4.1.6",
+    "yamljs": "^0.3.0"
+  }
+}

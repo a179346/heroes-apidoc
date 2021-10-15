@@ -1,0 +1,10 @@
+components:
+  parameters:
+    heroId:
+      in: path
+      name: heroId
+      description: 英雄id
+      required: true
+      schema:
+        type: string
+        example: '1'

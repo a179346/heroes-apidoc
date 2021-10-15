@@ -1,0 +1,39 @@
+/heroes:
+  get:
+    tags:
+      - Hero
+    summary: List Heroes - 取得英雄列表
+    parameters:
+      - $ref: '#/components/parameters/Name'
+      - $ref: '#/components/parameters/Password'
+    consumes:
+      - application/json
+    produces:
+      - application/json
+    responses:
+      '200':
+        description: Success response
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                heroes:
+                  type: array
+                  description: 英雄列表
+                  items:
+                    $ref: '#/components/schemas/Hero'
+
+      '401':
+        description: 'Unauthorized (code: "unauthorized") (當Name跟Password都有給，但驗證身分錯誤時，回傳401)'
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ApiError'
+
+      '500':
+        description: 'Internal Server Error (code: "internal_server_error")'
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ApiError'

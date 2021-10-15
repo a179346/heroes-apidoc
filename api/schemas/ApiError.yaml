@@ -1,0 +1,20 @@
+components:
+  schemas:
+    ApiError:
+      type: object
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: string
+          description: 錯誤代碼
+          example: 'example_error_code'
+        message:
+          type: string
+          description: 錯誤訊息
+          example: 'example error message'
+        stack:
+          type: string
+          description: 錯誤stack (在正式環境不會有)
+          example: 'example error stack'
