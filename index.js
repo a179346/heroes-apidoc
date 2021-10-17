@@ -14,8 +14,11 @@ const options = {
       version: '1.0.0',
     },
     servers: [ {
+      url: 'https://heroes-hahow.herokuapp.com',
+      description: 'development'
+    }, {
       url: 'http://127.0.0.1:3100',
-      description: 'local,'
+      description: 'local'
     } ],
     schemes: [ 'http' ],
     basePath: '/'
